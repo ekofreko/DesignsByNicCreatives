@@ -220,6 +220,33 @@ img {
   gap: 14px;
 }
 
+.pdf-preview,
+.pdf-scroll-box {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.pdf-preview iframe,
+.pdf-scroll-box iframe {
+  display: block;
+  width: 100%;
+  height: 340px;
+  border: 0;
+  background: #ffffff;
+}
+
+.pdf-scroll-box {
+  height: 340px;
+  overflow-y: auto;
+}
+
+.pdf-scroll-box iframe {
+  height: 620px;
+}
+
 .card-badge {
   display: inline-block;
   width: fit-content;
@@ -244,6 +271,12 @@ img {
 .contact-box p {
   margin: 0;
   color: var(--muted);
+}
+
+.split .location-line {
+  margin-bottom: 12px;
+  color: var(--accent-2);
+  font-weight: 700;
 }
 
 .text-link {
